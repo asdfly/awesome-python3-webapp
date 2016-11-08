@@ -54,7 +54,6 @@ def text2html(text):
     return ''.join(lines)
 
 
-@asyncio.coroutine
 async def cookie2user(cookie_str):
     """
     Parse cookie and load user if cookie is valid.

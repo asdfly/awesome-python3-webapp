@@ -6,6 +6,7 @@
 
 <script>
 function initVM(data) {
+    $('#vm').show();
     var vm = new Vue({
         el: '#vm',
         data: {
@@ -27,8 +28,7 @@ function initVM(data) {
                 }
             }
         }
-    });
-    $('#vm').show();
+    })
 }
 $(function() {
     getJSON('/api/blogs', {
